@@ -11,3 +11,4 @@ public class InicioController {
         return "Sistema de Inventario funcionando";
     }
 }
+    
