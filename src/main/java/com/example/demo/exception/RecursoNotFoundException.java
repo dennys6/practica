@@ -5,8 +5,7 @@
 package com.example.demo.exception;
 
 /**
- *
- * @author docas
+  @author docas
  */
 public class RecursoNotFoundException extends RuntimeException {
     
