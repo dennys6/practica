@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.example.demo.dto;
+package com.example.demo.dto.Producto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -32,9 +32,9 @@ public class ProductoRequest {
     @DecimalMin(value="0.0", inclusive=false, message="No puede ser menor a cero")
     private BigDecimal precio;
     
-    @NotNull(message="Este campo es obligatorio")
+    /*@NotNull(message="Este campo es obligatorio")
     @Min(value=1, message="Debe ser mayor a cero")
-    private Integer stock;
+    private Integer stock;*/
     
     @NotNull(message="Este campo es obligatorio")
     private Long categoriaId;
@@ -48,48 +48,24 @@ public class ProductoRequest {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
     public BigDecimal getPrecio() {
         return precio;
     }
 
-    public void setPrecio(BigDecimal precio) {
-        this.precio = precio;
-    }
 
-    public Integer getStock() {
-        return stock;
-    }
-
-    public void setStock(Integer stock) {
-        this.stock = stock;
-    }
 
     public Long getCategoriaId() {
         return categoriaId;
     }
 
-    public void setCategoriaId(Long categoria) {
-        this.categoriaId = categoria;
-    }
     
 }

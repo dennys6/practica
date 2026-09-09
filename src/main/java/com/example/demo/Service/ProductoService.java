@@ -5,8 +5,8 @@
 package com.example.demo.Service;
 
 import com.example.demo.Repository.ProductoRepository;
-import com.example.demo.dto.ProductoRequest;
-import com.example.demo.dto.ProductoResponse;
+import com.example.demo.dto.Producto.ProductoRequest;
+import com.example.demo.dto.Producto.ProductoResponse;
 import com.example.demo.entity.Categoria;
 import com.example.demo.entity.Producto;
 import com.example.demo.repository.CategoriaRepository;
@@ -48,7 +48,7 @@ public class ProductoService {
         
         producto.setNombre(request.getNombre());
         producto.setDescripcion(request.getDescripcion());
-        producto.setStock(request.getStock());
+        producto.setStock(0);
         producto.setPrecio(request.getPrecio());
         producto.setCategoria(categoria);
         
@@ -76,7 +76,7 @@ public class ProductoService {
         producto.setDescripcion(request.getDescripcion());
         producto.setNombre(request.getNombre());
         producto.setPrecio(request.getPrecio());
-        producto.setStock(request.getStock());
+        //producto.setStock(request.getStock());
         producto.setCategoria(categoria);
         
         Producto productoActualizado =productoRepository.save(producto);

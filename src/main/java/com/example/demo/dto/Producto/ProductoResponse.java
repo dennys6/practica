@@ -1,6 +1,6 @@
 
 
-package com.example.demo.dto;
+package com.example.demo.dto.Producto;
 
 import java.math.BigDecimal;
 /**
@@ -87,5 +87,14 @@ public class ProductoResponse {
     public void setCategoriaId(Long categoria) {
         this.categoriaId = categoria;
     }
+
+    public String getCategoriaNombre() {
+        return categoriaNombre;
+    }
+
+    public void setCategoriaNombre(String categoriaNombre) {
+        this.categoriaNombre = categoriaNombre;
+    }
+    
     
 }

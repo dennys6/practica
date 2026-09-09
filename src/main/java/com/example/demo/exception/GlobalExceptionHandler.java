@@ -44,4 +44,9 @@ public class GlobalExceptionHandler {
 
     }
     
+    @ExceptionHandler(StockInsuficienteException.class)
+    public ResponseEntity<Map<String, Object>> manejarStockInsuficiente(StockInsuficienteException ex){
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of("status", 400, "message", ex.getMessage()));    }
+    
+    
 }

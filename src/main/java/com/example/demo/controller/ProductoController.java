@@ -4,8 +4,8 @@
  */
 package com.example.demo.controller;
 import com.example.demo.Service.ProductoService;
-import com.example.demo.dto.ProductoRequest;
-import com.example.demo.dto.ProductoResponse;
+import com.example.demo.dto.Producto.ProductoRequest;
+import com.example.demo.dto.Producto.ProductoResponse;
 
 import jakarta.validation.Valid;
 
